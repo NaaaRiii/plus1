@@ -1,0 +1,14 @@
+* {
+  box-sizing: border-box;
+}
+
+.top-page-header {
+  width: 100vw;
+  padding: auto;
+  display: flex;
+  justify-content: center;
+}
+
+.plus1-icon {
+  width: 10vw;
+}
