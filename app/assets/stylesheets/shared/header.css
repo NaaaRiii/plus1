@@ -4,11 +4,11 @@
 
 .top-page-header {
   width: 100vw;
-  padding: auto;
+  padding-top: 10px;
   display: flex;
   justify-content: center;
 }
 
 .plus1-icon {
-  width: 10vw;
+  width: 12vw;
 }

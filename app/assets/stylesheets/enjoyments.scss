@@ -1,3 +1,117 @@
-// Place all the styles related to the enjoyments controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+/* 本番環境で適用されなかったら、cssファイルを作る　*/
+
+a {
+  text-decoration: none;
+}
+
+.main {
+  background: #f8f8f8;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Sawarabi+Mincho&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kosugi+Maru&family=Pacifico&family=Sawarabi+Mincho&display=swap');
+
+/* トップページの帯 */
+
+.top-content {
+  width: 100vw;
+  height: 50vh;
+  background-image: image-url('miyako.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 5vh 15vw;
+  color: rgb(33, 200, 206);
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.9);
+}
+
+.top-title {
+  font-family: 'Pacifico', cursive;
+  font-size: 5vh;
+}
+
+.middle-content{
+  display: flex;
+  justify-content: center;
+  padding-top: 60px;
+  padding-bottom: 30px;
+  background-color: #fff;
+  font-family: 'Pacifico', cursive;
+  font-size: 30px;
+}
+
+.inner{
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  font-family: 'Sawarabi Mincho', sans-serif;
+}
+
+.example{
+  background-color: #fff;
+}
+
+.ex-parent{
+  display: flex;
+  justify-content: center;
+  padding-top: 60px;
+  padding-bottom: 25px;
+  font-family: 'Pacifico', cursive;
+  font-size: 30px;
+  background-color: #fff;
+}
+
+.ex-child{
+  width: 500px;
+  margin: 30px auto;
+  margin-bottom: 0px;
+  background: linear-gradient(rgb(24, 52, 177) 1px, transparent 2px);
+  background-size: auto 2rem;
+  border-bottom: 2px solid rgba(67, 87, 175, 0.719);
+  font-family: 'Sawarabi Mincho', sans-serif;
+  background-color: #fff;
+  font-size: 15px;
+}
+
+.ex-child p {
+  line-height: 2rem;
+  margin: 0;
+}
+
+.achievement{
+  position: relative;
+  padding-top: 250px;
+  height: 500px;
+  width: 100%;
+  display: flex;
+  background-color: #fff;
+}
+
+.left-achi{
+  position: absolute;
+  width: 500px;
+  height: 200px;
+  margin-left: 100px;
+  background-color: rgba(248, 231, 197, 0.404);
+  line-height: 1.5em;
+  font-size: 20px;
+  font-family: 'Kosugi Maru', sans-serif;
+}
+
+.right-achi{
+  margin-left: auto;
+  display: inline;
+  font-size: 20px;
+  font-family: 'Kosugi Maru', sans-serif;
+}
+
+.right-content{
+  margin-left: auto;
+  font-family: 'Kosugi Maru', sans-serif;
+}

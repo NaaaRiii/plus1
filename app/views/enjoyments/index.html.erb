@@ -1,2 +1,92 @@
 <%= render "shared/header" %>
-<div class='main'></div>
+<div class='main'>
+
+  <%# トップページの帯 %>
+  <div class='top-content'>
+    <h2 class='top-title'>
+      Let's enjoy your life
+    </h2>
+    <%# <%= link_to image_tag("miyako.jpg", class:"miyako"), "#" %>
+  </div>
+
+  <%# メッセージ %>
+  <div class='middle-content'>
+   <span class='maessage'>Massage</span>
+  </div>
+
+  <div class='inner'>
+    <div class='inner-top'>
+    日々コツコツと自分を成長させよう
+    </div>
+    <div class='inner-center'>
+    成長を可視化することにより、自分がどれだけ成長しているのか
+    </div>
+    <div class='inner-bbottom'>
+    実感してください
+    </div>
+  </div>
+
+  <%# チェックボックスの例 %>
+  <div class='example'>
+    <div class='ex-parent'>
+      <div class='exexex'>
+      example
+      </div>
+    </div>
+
+    <div class='ex-child'>
+      <p><input type='checkbox'>
+      CSSでflexboxを学習した
+      </p>
+
+      <p><input type='checkbox'>
+        Rubyでifを使い条件分岐させてみた
+      </p>
+
+      <p><input type='checkbox'>
+        画像投稿機能を実装してみた
+      </p>
+
+      <p><input type='checkbox'>
+        deviseを導入して、ユーザー管理機能を実装してみた
+      </p>
+
+      <p><input type='checkbox'>
+        MVCの流れを学習した
+      </p>
+    </div>
+  </div>
+
+  <%# 達成項目の例%>
+  <div class='achievement'>
+    <div class='left-achi'>
+    <p>ex)</p>
+    <p>プログラミング能力</p>
+    <p>コミュニケーション力</p>
+    <p>英語力</p>
+    <p>ビジネス知識</p>
+    <p>雑学力</p>
+    </div>
+    <div class='right-achi'>
+    <p>能力値</p>
+    <div class='initialーvalue'>0</div>
+    <div class='add-value'>+1</div>
+<%#     
+    <p>0</p><p>+1</p>
+    <p>0</p><p>+1</p>
+    <p>0</p><p>+1</p>
+    <p>0</p><p>+1</p>
+     %>
+    </div>
+    <div class='right-content'>
+    <p>
+    これから身につけていく、スキルを1〜5個考えてみましょう
+    </p>
+    <p>
+    ※左記は一例です
+    </p>
+    </div>
+  </div>
+
+</div>
+
