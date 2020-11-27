@@ -1,79 +1,48 @@
-# 楽しみながら、成長をしていこう
- 
-日々楽しみながら、コツコツと成長していこう
- 
-# トップページ
- 
+# アプリケーション名
 
+Plus1
+
+# アプリケーションの概要
  
+日々楽しみながら、コツコツと成長していこうをモットーに
+自身の成長を可視化するアプリケーション
+
 # 特徴
+
+自身の成長度合いを可視化する
+項目を達成すると、達成度合いが％で表示される
+100％に達すると、レベルが上がる
  
-自分の成長度合いを可視化してみよう
+# 目指した課題解決
  
-# 言語
- 
-Ruby, Ruby on Rails, JavaScript, HTML, CSS
- 
-# Usage
- 
-DEMOの実行方法など、"hoge"の基本的な使い方を説明する
- 
-```bash
-git clone https://github.com/hoge/~
-cd examples
-python demo.py
-```
+課題や壁を乗り越えようとしている人たちへ
+モチベーションが上がらない、何をすれば良いかわからない
 
- 
-# テーブル設計
+# 要件定義
 
-## users テーブル
+ユーザー管理機能
+成長を記録するページ
+編集ページ
 
-| Column   | Type   | Options     |
-| -------- | ------ | ----------- |
-| name     | string | null: false |
-| email    | string | null: false |
-| password | string | null: false |
+## データベース設計
 
-### Association
+# Users テーブル
 
-- has_many :room_users
-- has_many :rooms, through: room_users
-- has_many :messages
+| Column              | Type   | Options                   |
+| ------------------- | ------ | ------------------------- |
+| nickname            | string | null: false, unique: true |
+| email               | string | null: false, unique: true |
+| encrypted_password  | string | null: false               |
 
-## rooms テーブル
+# Association
+has_one :mypage
 
-| Column | Type   | Options     |
-| ------ | ------ | ----------- |
-| name   | string | null: false |
+# Mypage テーブル
 
-### Association
+| Column               | Type       | Options           |
+| -------------------- | ---------- | ----------------- |
+| achievement          | string     | null: false       |
+| user                 | references | foreign_key: true |
 
-- has_many :room_users
-- has_many :users, through: room_users
-- has_many :messages
-
-## room_users テーブル
-
-| Column | Type       | Options                        |
-| ------ | ---------- | ------------------------------ |
-| user   | references | null: false, foreign_key: true |
-| room   | references | null: false, foreign_key: true |
-
-### Association
-
-- belongs_to :room
-- belongs_to :user
-
-## messages テーブル
-
-| Column  | Type       | Options                        |
-| ------- | ---------- | ------------------------------ |
-| content | string     |                                |
-| user    | references | null: false, foreign_key: true |
-| room    | references | null: false, foreign_key: true |
-
-### Association
-
-- belongs_to :room
-- belongs_to :user
+## Association
+belongs_to :user
