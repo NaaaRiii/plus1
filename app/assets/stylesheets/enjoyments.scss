@@ -38,7 +38,7 @@ a {
 .middle-content{
   display: flex;
   justify-content: center;
-  padding-top: 60px;
+  padding-top: 100px;
   padding-bottom: 30px;
   background-color: #fff;
   font-family: 'Pacifico', cursive;
@@ -57,23 +57,30 @@ a {
   background-color: #fff;
 }
 
+.level-image{
+  margin-left: 1000px;
+  height: 50px;
+  width: 50px;
+}
+
 .ex-parent{
   display: flex;
-  justify-content: center;
-  padding-top: 60px;
-  padding-bottom: 25px;
+  margin-left: 100px;
+  padding-top: 50px;
   font-family: 'Pacifico', cursive;
+  border-left-style: dotted;
+  border-left: rgba(0, 0, 0, 0.9);
   font-size: 30px;
   background-color: #fff;
 }
 
 .ex-child{
   width: 500px;
-  margin: 30px auto;
-  margin-bottom: 0px;
-  background: linear-gradient(rgb(24, 52, 177) 1px, transparent 2px);
+  margin-top: 30px;
+  margin-left: 100px;
+  margin-bottom: 100px;
+  background: repeating-linear-gradient(rgba(31, 77, 230, 0) 0, rgba(255, 255, 255, 0) 23px, rgb(16, 44, 202) 23px, rgba(65, 89, 230, 0.644) 24px);
   background-size: auto 2rem;
-  border-bottom: 2px solid rgba(67, 87, 175, 0.719);
   font-family: 'Sawarabi Mincho', sans-serif;
   background-color: #fff;
   font-size: 15px;
@@ -81,13 +88,13 @@ a {
 
 .ex-child p {
   line-height: 2rem;
-  margin: 0;
+  margin-top: 0;
 }
 
 .achievement{
   position: relative;
-  padding-top: 250px;
-  height: 500px;
+  padding-top: 300px;
+  height: 480px;
   width: 100%;
   display: flex;
   background-color: #fff;
@@ -104,10 +111,16 @@ a {
   font-family: 'Kosugi Maru', sans-serif;
 }
 
+.left-con{
+  margin-top: 3px;
+  margin-left: 10px;
+}
+
 .right-achi{
   position: absolute;
   width: 500px;
   height: 200px;
+  margin-top: 3px;
   margin-left: 500px;
   line-height: 1.5em;
   font-size: 20px;
@@ -118,7 +131,7 @@ a {
   position: absolute;
   width: 500px;
   height: 200px;
-  margin-top: 30px;
+  margin-top: 33px;
   margin-left: 550px;
   line-height: 1.5em;
   font-size: 20px;
@@ -127,6 +140,18 @@ a {
 }
 
 .right-content{
-  margin-left: auto;
+  margin-left: 800px;
+  line-height: 1.5em;
+  font-size: 18px;
   font-family: 'Kosugi Maru', sans-serif;
+}
+
+.level-image{
+  width: 500px;
+  height: 500px;
+}
+
+.image{
+  width: 100px;
+  height: 100px;
 }
