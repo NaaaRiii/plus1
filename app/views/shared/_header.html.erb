@@ -1,6 +1,18 @@
 <%# CSS・・・assets/stylesheets/shared/header.css %>
 <header class='top-page-header'>
-  <h1>
+  <div class='logo'>
     <%= link_to image_tag("Logo.plus1.jpg", class:"plus1-icon"), "/" %>
-  </h1>
+  </div>
+
+  <div class='top'>
+    <ul class='login-logout'>
+      <% if user_signed_in? %>
+         <li><%= link_to "#{current_user.name}","#", class: "user-name" %></li> 
+         <li><%= link_to 'ログアウト', destroy_user_session_path, method: :delete, class: "logout" %></li>
+      <% else %>
+        <li><%= link_to 'ログイン', new_user_session_path, class: "login" %></li>
+        <li><%= link_to '新規登録', new_user_registration_path, class: "sign-up" %></li>
+      <% end %>
+    </ul>
+  </div>
 </header>

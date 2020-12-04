@@ -2,13 +2,55 @@
   box-sizing: border-box;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@300&display=swap');
+
 .top-page-header {
   width: 100vw;
   padding-top: 10px;
   display: flex;
-  justify-content: center;
+}
+
+.logo{
+  margin-left: 650px;
 }
 
 .plus1-icon {
-  width: 12vw;
+  width: 10vw;
+}
+
+.top {
+  font-size: 18px;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 1vh 0;
+}
+
+.login-logout {
+  display: flex;
+  list-style: none;
+  align-items: flex-end;
+  margin-left: 400px;
+}
+
+.login{
+  margin-right: 2vw;
+  color: rgb(0, 174, 255);
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+}
+
+
+.logout{
+  color: rgb(0, 174, 255);
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+}
+
+.sign-up{
+  color: rgb(0, 174, 255);
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+}
+
+.user-name{
+  color: rgb(0, 174, 255);
+  font-family: 'M PLUS Rounded 1c', sans-serif;
 }
