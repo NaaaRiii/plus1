@@ -51,6 +51,7 @@
 }
 
 .user-name{
-  color: rgb(0, 174, 255);
+  margin-right: 2vw;
+  color: rgb(212, 0, 255);
   font-family: 'M PLUS Rounded 1c', sans-serif;
 }
