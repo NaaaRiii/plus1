@@ -5,7 +5,7 @@ a {
 }
 
 .main {
-  background: #f8f8f8;
+  background: #fff;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
@@ -145,4 +145,36 @@ a {
   line-height: 1.5em;
   font-size: 18px;
   font-family: 'Kosugi Maru', sans-serif;
+}
+
+.begin{
+  margin-bottom: 300px;
+  background-color: #fff;
+}
+
+.let-start{
+  display: flex;
+  margin-left: 650px;
+  margin-bottom: 10px;
+  padding-top: 100px;
+  font-family: 'Pacifico', cursive;
+  border-left-style: dotted;
+  border-left: rgba(0, 0, 0, 0.9);
+  font-size: 30px;
+  background-color: #fff;
+}
+
+.start{
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  font-family: 'Sawarabi Mincho', sans-serif;
+}
+
+.bottom-sign-up{
+  margin-top: 10px;
+  color: rgb(0, 174, 255);
+  font-size: 20px;
+  font-family: 'M PLUS Rounded 1c', sans-serif;
 }
