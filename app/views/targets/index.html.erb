@@ -1,0 +1,27 @@
+<%= render "shared/header" %>
+
+<div class="targets-main">
+  <div class="targets-sub">
+    <div class="targets-box">
+      <div class="target">
+        目標を決めましょう
+        <span class="indispensable">必須</span>
+      </div>
+      <%= text_area :target, class:"target-text", id:"target", placeholder:"目標の設定" %>
+
+      <div class="achivement">
+        達成項目を設定しましょう
+        <span class="indispensable">必須</span>
+      </div>
+      <%= text_area :achivement, class:"achivement-text", id:"achivement", placeholder:"達成項目の設定" %>
+
+      <div class="enthusiasm">
+        意気込みor今の気持ちを書いてみましょう
+        <span class="indispensable">必須</span>
+      </div>
+      <%= text_area :enthusiasm, class:"enthusiasm-text", id:"enthusiasm" %>
+    </div>
+  </div>
+</div>
+
+<%= render "shared/footer" %>

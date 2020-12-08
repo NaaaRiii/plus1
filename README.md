@@ -35,13 +35,15 @@ Plus1
 | encrypted_password  | string | null: false               |
 
 ### Association
-has_one :mypage
+has_one :target
 
-## Mypage テーブル
+## Target テーブル
 
 | Column               | Type       | Options           |
 | -------------------- | ---------- | ----------------- |
 | achievement          | string     | null: false       |
+| target               | string     | null: false       |
+| enthusiasm           | string     |                   |
 | user                 | references | foreign_key: true |
 
 ### Association

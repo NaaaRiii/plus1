@@ -1,0 +1,57 @@
+.targets-main{
+  display: flex;
+  justify-content: center;
+  background-color: #f8f8f8;
+}
+
+.targets-sub{
+  display: flex;
+  justify-content: center;
+  width: 70vw;
+  height: 70vh;
+  background-color: #fff;
+}
+
+.targets-box{
+  background-color: palevioletred;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@300&family=Noto+Serif+JP&display=swap');
+
+/* 必須 */
+.indispensable {
+  background: #ea352d;
+  margin-left: 8px;
+  padding: 3px;
+  border-radius: 2px;
+  color: #fff;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+
+.target{
+  font-family: 'Noto Serif JP', serif;
+}
+
+.target-text{
+  justify-content: center;
+}
+
+.achivement{
+  font-family: 'Noto Serif JP', serif;
+}
+
+.achivement-text{
+  justify-content: center;
+}
+
+.enthusiasm{
+  justify-content: center;
+  font-family: 'Noto Serif JP', serif;
+}
+
+.enthusiasm-text{
+  justify-content: center;
+}
+
